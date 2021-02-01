@@ -1,9 +1,12 @@
-import java.util.Scanner;
-public class Manual {
-    public static void main(String[] args) {
-        System.out.print("Введите строку, которую нужно инвертировать: ");
-        Scanner sc = new Scanner(System.in);
-        String s1 = sc.nextLine();
-        new ReverseStroki(s1);
+import java.util.*
+import kotlin.jvm.JvmStatic
+
+object Manual {
+    @JvmStatic
+    fun main(args: Array<String>) {
+        print("Введите строку, которую нужно инвертировать: ")
+        val sc = Scanner(System.`in`)
+        val s1 = sc.nextLine()
+        ReverseStroki(s1)
     }
 }
